@@ -28,9 +28,8 @@ assignment's storage options. A thread lock guards reads/writes.
 ## Project structure
 
 ```
-your-repo/
-  README.md
-  AI_NOTES.md
+expense-tracker-api/
+  data/           # expenses.json lives here at runtime
   src/
     main.py       # FastAPI app and route handlers
     models.py     # Pydantic request/response models
@@ -38,8 +37,9 @@ your-repo/
   tests/
     conftest.py   # pytest fixtures (isolated temp-file storage per test)
     test_api.py   # 32 tests covering CRUD, filters, totals, edge cases
-  data/           # expenses.json lives here at runtime (gitignored)
+  AI_NOTES.md
   Dockerfile
+  README.md
   docker-compose.yml
   requirements.txt
 ```
