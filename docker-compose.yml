@@ -1,0 +1,7 @@
+services:
+  expense-api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data   # persist expenses.json on the host across container restarts
